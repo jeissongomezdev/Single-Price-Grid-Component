@@ -1,0 +1,86 @@
+@use "./scss/abstracts/mixins" as flexible;
+@use "./scss/abstracts/variables" as color;
+
+.container {
+  @include flexible.flex;
+  background-color: color.$light-gray;
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  color: darken(white, $amount: 15);
+  box-shadow: 0 20px 30px -10px rgba(154, 152, 152, 0.451);
+  display: grid;
+  font-size: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 45% 55%;
+  max-width: 615px;
+
+  &__info {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    grid-column: 1/3;
+    padding: 35px;
+
+    &-title {
+      color: color.$cyan;
+      margin-bottom: 20px;
+    }
+
+    &-subtitle {
+      color: color.$bright-yellow;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      color: color.$grayish-blue;
+      line-height: 2.5rem;
+    }
+  }
+
+  &__subtitle {
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  &__subscription {
+    background-color: color.$cyan;
+    border-radius: 0 0 0 5px;
+    padding: 35px;
+
+    &-price {
+      color: white;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+
+      & span {
+        color: lighten(color.$cyan, $amount: 10);
+        font-size: 1.4rem;
+      }
+    }
+
+    &-text {
+      margin-bottom: 30px;
+    }
+
+    &-btn {
+      background-color: color.$bright-yellow;
+      border-radius: 4px;
+      box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      text-decoration: none;
+    }
+  }
+
+  &__why {
+    background-color: lighten(color.$cyan, $amount: 3);
+    border-radius: 0 0 5px 0;
+    line-height: 2rem;
+    padding: 35px;
+  }
+}

@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <main className="card">
+        <main className="card animate__animated animate__fadeInLeft">
           <section className="card__info">
             <h2 className="card__info-title">Join our commmunity</h2>
             <h3 className="card__info-subtitle">
@@ -24,14 +24,26 @@ function App() {
             <p className="card__subscription-text">
               Full access for less than $1 a day
             </p>
-            <a href="#">Sign Up</a>
+            <a className="card__subscription-btn" href="#">
+              Sign Up
+            </a>
           </section>
           <section className="card__why">
             <h3 className="card__subtitle">Why Us</h3>
             <p className="card__why-text">
-              Tutorials by industry experts Peer & expert code review Coding
-              exercises Access to our GitHub repos Community forum Flashcard
-              decks New videos every week
+              Tutorials by industry experts
+              <br />
+              Peer & expert code review
+              <br />
+              Coding exercises
+              <br />
+              Access to our GitHub repos8
+              <br />
+              Community forum
+              <br />
+              Flashcard decks
+              <br />
+              New videos every week
             </p>
           </section>
         </main>
