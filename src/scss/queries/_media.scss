@@ -1,0 +1,30 @@
+@media screen and (max-width: 480px) {
+  .card {
+    box-shadow: 0 20px 30px -10px rgba(154, 152, 152, 0.451);
+    display: inline;
+    margin: 2rem;
+
+    &__info {
+      font-size: 1.4rem;
+      padding: 25px;
+
+      &-subtitle {
+        margin-bottom: 20px;
+      }
+
+      &-text {
+        line-height: 2.8rem;
+      }
+    }
+
+    &__subscription {
+      border-radius: 0;
+      padding: 25px;
+    }
+
+    &__why {
+      border-radius: 0 0 5px 5px;
+      padding: 25px;
+    }
+  }
+}
